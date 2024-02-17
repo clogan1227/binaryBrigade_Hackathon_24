@@ -119,3 +119,7 @@
     border-radius: 10px;
     background-color: white;
 }
+.professionalHelp img {
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
