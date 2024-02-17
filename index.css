@@ -14,8 +14,10 @@
 }
 
 .text {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Quando", serif;
     font-size: 50px;
+    color: #FFA500;
+    text-decoration: none;
 }
 
 .title {
