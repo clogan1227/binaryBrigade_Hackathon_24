@@ -1,3 +1,18 @@
+/* Lyfe Logo font */
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+
+/* constants */
+:root {
+    --orange-logo--: #FFA500;
+}
+
+/* font family */
+.quando-regular {
+    font-family: "Quando", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .text {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 50px;
