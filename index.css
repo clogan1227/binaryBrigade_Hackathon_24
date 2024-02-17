@@ -17,6 +17,25 @@
     font-family: "Quando", serif;
     font-size: 50px;
     color: #FFA500;
+}
+
+.reglog {
+    font-weight: bolder;
+    position: relative;
+    top: 30px;
+}
+
+.text a:link {
+    color: #FFA500;
+}
+
+.links:link {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: #FFA500;
     text-decoration: none;
 }
 
@@ -28,6 +47,10 @@
     text-align: right;
 }
 
+.mtext {
+    text-align: center;
+}
+
 .ltext {
     text-align: left;
 }
@@ -35,7 +58,7 @@
 .dropbtn {
     background-color: white;
     border: 0;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 600;
     padding-right: 0;
 }
@@ -48,7 +71,7 @@
     background-color: white;
     border: 0;
     border-bottom: #fd7e14 5px solid;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 600;
 }
 
@@ -78,11 +101,31 @@
 }
 
 .arrow {
-    width: 15px;
+    width: 30px;
     margin-left: 0;
     transition: transform 0.2s ease;
 }
 
 .dropdown:hover .arrow {
     transform: rotate(180deg);
+}
+
+.border {
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bigimg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    font-family: "Quando", serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
 }
