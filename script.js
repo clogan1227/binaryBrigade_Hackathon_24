@@ -1,66 +1,66 @@
-// const { Configuration, OpenAIApi } = require('openai');
-// const openaiKey = process.env.openAIAPIKey;
-// const config = new Configuration({
-//     apiKey: openaiKey
-// });
-// require("dotenv").config(); //for the .env file
+const { Configuration, OpenAIApi } = require('openai');
+const openaiKey = process.env.openAIAPIKey;
+const config = new Configuration({
+    apiKey: openaiKey
+});
+require("dotenv").config(); //for the .env file
 
-// const openai = new OpenAIApi(config);
-// const runPrompt = async () => {
-//     const prompt = `what is 2+2?`;
+const openai = new OpenAIApi(config);
+const runPrompt = async () => {
+    const prompt = `what is 2+2?`;
 
-//     const response = await openai.createCompletion({
-//         model: 'text-davinci-003',
-//         prompt: prompt,
-//         max_tokens: 2048,
-//         temperature: 1
-//     });
+    const response = await openai.createCompletion({
+        model: 'text-davinci-003',
+        prompt: prompt,
+        max_tokens: 2048,
+        temperature: 1
+    });
 
-//     console.log(response.data);
-// }
-// runPrompt();
+    console.log(response.data);
+}
+runPrompt();
 
 
 
 // console.log(openaiKey);
 
 
-var Form1 = document.getElementById("Form1");
-var Form2 = document.getElementById("Form2");
-var Form3 = document.getElementById("Form3");
+// var Form1 = document.getElementById("Form1");
+// var Form2 = document.getElementById("Form2");
+// var Form3 = document.getElementById("Form3");
 
 
-var Next1 = document.getElementById("Next1");
-var Next2 = document.getElementById("Next2");
-var Back1 = document.getElementById("Back1");
-var Back2 = document.getElementById("Back2");
+// var Next1 = document.getElementById("Next1");
+// var Next2 = document.getElementById("Next2");
+// var Back1 = document.getElementById("Back1");
+// var Back2 = document.getElementById("Back2");
 
-var progress = document.getElementById("progress");
+// var progress = document.getElementById("progress");
 
-Next1.onclick = function(){
-    Form1.style.left = "-450px";
-    Form2.style.left = "40px";
-    progress.style.width = "240px";
-}
+// Next1.onclick = function(){
+//     Form1.style.left = "-450px";
+//     Form2.style.left = "40px";
+//     progress.style.width = "240px";
+// }
 
-Back1.onclick = function(){
-    Form1.style.left = "40px";
-    Form2.style.left = "450px";
-    progress.style.width = "120px";
-}
+// Back1.onclick = function(){
+//     Form1.style.left = "40px";
+//     Form2.style.left = "450px";
+//     progress.style.width = "120px";
+// }
 
-Next2.onclick = function(){
-    Form2.style.left = "-450px";
-    Form3.style.left = "40px";
-    progress.style.width = "360px";
+// Next2.onclick = function(){
+//     Form2.style.left = "-450px";
+//     Form3.style.left = "40px";
+//     progress.style.width = "360px";
+    
+// }
 
-}
-
-Back2.onclick = function(){
-    Form2.style.left = "40px";
-    Form3.style.left = "450px";
-    progress.style.width = "240px";
-}
+// Back2.onclick = function(){
+//     Form2.style.left = "40px";
+//     Form3.style.left = "450px";
+//     progress.style.width = "240px";
+// }
 
 //---------------------------- API stuff ---------------------------------------
 
@@ -109,3 +109,7 @@ Back2.onclick = function(){
 
 //     sendData(data);
 // });
+
+
+
+
