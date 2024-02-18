@@ -116,3 +116,16 @@
     border-radius: 10px;
     margin-bottom: 30px;
 }
+.BudegetTools{
+    width: 350px; 
+    display: block;     
+    margin: 0 auto;  
+}
+.imageText{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Quando", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
