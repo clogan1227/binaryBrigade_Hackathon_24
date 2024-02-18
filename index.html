@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LyfeLaunch</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="public/css/main.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -15,65 +15,64 @@
     <div class="container-flex">
         <div class="row">
             <div class="col">
-                <img src="images/LyfeLaunch_Logo.png" />
+                <img src="images/LyfeLaunch_Logo.png" alt="LyfeLaunch Logo" title="LyfeLaunch Logo" />
             </div>
             <div class="col"></div>
-            <!-- <div class="col text rtext">
-                <a class="links reglog" href="#">REGISTER</a>
-                <a>&emsp;</a>
-                <a class="links reglog" href="#">LOGIN</a>
-            </div> -->
             <button class="col text rtext reglog logbtn" id="btn-login" disabled="true" onclick="login()">Login</button>
-            <button class="col text rtext reglog logbtn" id="btn-logout" disabled="true" onclick="logout()">Log
-                out</button>
+            <button class="col text rtext reglog logbtn" id="btn-logout" disabled="true"
+                onclick="logout()">Logout</button>
         </div>
     </div>
-    <div class="border"></div>
-    <div class="container-flex">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col dropdown">
-                <button class="dropbtn text mtext">Career</button>
-                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
-                <div class="dropdown-content">
-                    <a href="#">Resume/Cover Letter Help</a>
-                    <a href="#">Career Path</a>
+    <div class="hidden text mt-5" id="open-content" style="text-align: center;">Log In to View Our Resources!</div>
+    <div class="hidden" id="gated-content">
+        <div class="border"></div>
+        <div class="container-flex">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col dropdown">
+                    <button class="dropbtn text mtext">Career</button>
+                    <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                    <div class="dropdown-content">
+                        <a href="#">Resume/Cover Letter Help</a>
+                        <a href="#">Career Path</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col dropdown">
-                <button class="dropbtn text mtext">College</button>
-                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
-                <div class="dropdown-content">
-                    <a href="#">Find your Major</a>
-                    <a href="#">Resources</a>
+                <div class="col dropdown">
+                    <button class="dropbtn text mtext">College</button>
+                    <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                    <div class="dropdown-content">
+                        <a href="#">Find your Major</a>
+                        <a href="#">Resources</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col dropdown">
-                <a href = "Finanaical.html">
-                    <button class="dropbtn text mtext">Finance</button>
-                </a>
-                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
-                <div class="dropdown-content">
-                    <a href="FinancialSub/Budgeting.html">Budgeting</a>
-                    <a href="#">Taxes</a>
+                <div class="col dropdown">
+                    <a href="Finanaical.html">
+                        <button class="dropbtn text mtext">Finance</button>
+                    </a>
+                    <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                    <div class="dropdown-content">
+                        <a href="FinancialSub/Budgeting.html">Budgeting</a>
+                        <a href="#">Taxes</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col dropdown">
-                <a href = "MentalHealth.html">
-                    <button class="dropbtn text mtext">Mental Health</button>
-                </a>
-                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
-                <div class="dropdown-content">
-                    <a href="MentalHealthSubs/Professional.html">Professional Help</a>
-                    <a href="#">Discussion</a>
-                    <a href="MentalHealthSubs/MentalResources.html">Resources</a>
+                <div class="col dropdown">
+                    <a href="MentalHealth.html">
+                        <button class="dropbtn text mtext">Mental Health</button>
+                    </a>
+                    <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                    <div class="dropdown-content">
+                        <a href="MentalHealthSubs/Professional.html">Professional Help</a>
+                        <a href="#">Discussion</a>
+                        <a href="MentalHealthSubs/MentalResources.html">Resources</a>
+                    </div>
                 </div>
+                <div class="col"></div>
             </div>
-            <div class="col"></div>
         </div>
     </div>
     <div class="container-flex">
-        <img class="img-fluid mx-auto d-block mt-5 mb-5" src="images/twizzy.JPG" width="1100" />
+        <img class="img-fluid mx-auto d-block mt-5 mb-5" src="images/twizzy.JPG" width="1100"
+            alt="The three group members of team binaryBrigade" />
     </div>
     <div class="container-flex">
         <p class="text" style="text-align: center;">About Us</p>

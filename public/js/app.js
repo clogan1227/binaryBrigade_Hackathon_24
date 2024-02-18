@@ -46,6 +46,7 @@ const updateUI = async () => {
 
     if (isAuthenticated) {
         document.getElementById("gated-content").classList.remove("hidden");
+        document.getElementById("open-content").classList.add("hidden");
 
         document.getElementById(
             "ipt-access-token"
@@ -56,6 +57,7 @@ const updateUI = async () => {
         );
 
     } else {
+        document.getElementById("open-content").classList.remove("hidden");
         document.getElementById("gated-content").classList.add("hidden");
     }
 };

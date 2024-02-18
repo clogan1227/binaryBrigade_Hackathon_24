@@ -86,52 +86,61 @@
 .dropdown:hover .arrow {
     transform: rotate(180deg);
 }
-.importance{
+
+.importance {
     margin-top: 30px;
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
 }
-.importanceTitle{
+
+.importanceTitle {
     margin-top: 50px;
     text-align: center;
     font-family: "Quando", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
- }
- .mentalMethods {
+}
+
+.mentalMethods {
     margin-top: 30px;
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
-    justify-content: space-between; /* Add space between items */
+    justify-content: space-between;
+    /* Add space between items */
 }
- .mentalResources{
-    width: 32%;
-    
- }
- .mentalDiscussion{
-    width: 32%;
-    
- }
- .mentalProfessional{
-    width: 32%;
-    
 
- }
- .mentalBtn{
+.mentalResources {
+    width: 32%;
+
+}
+
+.mentalDiscussion {
+    width: 32%;
+
+}
+
+.mentalProfessional {
+    width: 32%;
+
+
+}
+
+.mentalBtn {
     margin-top: 10px;
     margin-bottom: 50px;
     border-radius: 10px;
     background-color: white;
     border-color: black;
-    color:black;
+    color: black;
     font-family: "Quando", serif;
- }
- .mentalImg{
+}
+
+.mentalImg {
     width: 300px;
     height: 300px;
-    object-fit:cover;
- }
+    object-fit: cover;
+}
