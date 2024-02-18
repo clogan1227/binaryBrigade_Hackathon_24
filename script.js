@@ -1,24 +1,60 @@
-const { Configuration, OpenAIApi } = require('openai');
-const openaiKey = process.env.openAIAPIKey;
-const config = new Configuration({
-    apiKey: openaiKey
-});
-require("dotenv").config(); //for the .env file
 
-const openai = new OpenAIApi(config);
-const runPrompt = async () => {
-    const prompt = `what is 2+2?`;
+// TOOK OUT THE API KEY for now 
 
-    const response = await openai.createCompletion({
-        model: 'text-davinci-003',
-        prompt: prompt,
-        max_tokens: 2048,
-        temperature: 1
-    });
+async function getChatGPTResponse(textInput) {
+    // spread operator
+    // 
+      
+    const requestData = {
+      model: "gpt-3.5-turbo",
+      messages: [
+        {
+          role: "system",
+          content:
+            "Be a helpful assistant for time management, productivty, and relaed topics. Be relatively concise in your answers as the window you are chatting in is small. Make sure to look at the users SCHEDULE CONTEXT for data on how to help them. Scheduled events are structured like { title: 'name of event', start: starting timestamp, end: ending timestamp}",
+        },
+        {
+          role: "user",
+          content: [
+            {
+              type: "text",
+              text: `${textInput}` ,
+            },
+          ],
+        },
+      ],
+    }
+    fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${openAIAPIKey}`,
+      },
+      body: JSON.stringify(requestData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        // console.log(data)
+        // console.log(data.choices[0].message)
+        console.log(data.choices[0].message)
+        
+      })
+      .catch((error) => {
+        console.error("Error:", error)
+        return null;
+      })
+  }
 
-    console.log(response.data);
-}
-runPrompt();
+
+
+
+getChatGPTResponse("what is today's date?")
+
+
+
+
+
+
 
 
 
@@ -62,54 +98,50 @@ runPrompt();
 //     progress.style.width = "240px";
 // }
 
-//---------------------------- API stuff ---------------------------------------
+// // ---------------------------- API stuff ---------------------------------------
 
 // // Function to send data to the API
-// function sendData(data) {
-//     // Replace 'your-api-endpoint' with the actual API endpoint
-//     fetch('your-api-endpoint', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(data),
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log('Success:', data);
-//         // Optionally, you can display a success message to the user
-//     })
-//     .catch((error) => {
-//         console.error('Error:', error);
-//         // Optionally, you can display an error message to the user
+// // ... your existing code ...
+
+// // This function makes a call to the OpenAI API
+// async function getMajor(skills, hobbies, coursesLiked, scenery, jobType, studyEnvironment, careerAspirations, academicStrengths, personalGoals) {
+//     var data = JSON.stringify({
+//         'prompt': `The user has the following skills: ${skills}, hobbies: ${hobbies}, and likes these courses: ${coursesLiked}. They prefer ${scenery}, ${jobType}, and ${studyEnvironment}. Their career aspirations are ${careerAspirations}, and they are strong in ${academicStrengths}. Their personal goals are ${personalGoals}. What major should they pursue?`,
+//         'max_tokens': 60
 //     });
+
+//     var xhr = new XMLHttpRequest();
+//     xhr.withCredentials = true;
+
+//     xhr.addEventListener("readystatechange", function() {
+//         if (this.readyState === this.DONE) {
+//             console.log(this.responseText);
+//         }
+//     });
+
+//     xhr.open("POST", "https://api.openai.com/v1/engines/davinci-codex/completions");
+//     xhr.setRequestHeader("content-type", "application/json");
+//     xhr.setRequestHeader("authorization", "Bearer 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");
+
+//     xhr.send(data);
 // }
 
+// Form3.onsubmit = function(e){
+//     e.preventDefault();
+//     // Get the values from the form
+//     var skills = document.getElementById("skills").value;
+//     var hobbies = document.getElementById("hobbies").value;
+//     var coursesLiked = document.getElementById("courses-liked").value;
+//     var scenery = document.getElementById("scenerary").value;
+//     var jobType = document.getElementById("job-type").value;
+//     var studyEnvironment = document.getElementById("environment-preference").value;
+//     var careerAspirations = document.getElementById("career-aspirations").value;
+//     var academicStrengths = document.getElementById("academic-strengths").value;
+//     var personalGoals = document.getElementById("personal-goals").value;
 
-// document.getElementById('container').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Prevent form from submitting
-
-//     const data = {
-//         Form1: {
-//             careerAspirations: document.getElementById('skills').value,
-//             academicStrengths: document.getElementById('hobbies').value,
-//             personalGoals: document.getElementById('courses-liked').value
-//         },
-//         Form2: {
-//             careerAspirations: document.getElementById('scenerary').value,
-//             academicStrengths: document.getElementById('job-type').value,
-//             personalGoals: document.getElementById('environment-preference').value
-//         },
-//         Form3: {
-//             careerAspirations: document.getElementById('career-aspirations').value,
-//             academicStrengths: document.getElementById('academic-strengths').value,
-//             personalGoals: document.getElementById('personal-goals').value
-//         }
-//     };
-
-//     sendData(data);
-// });
-
+//     // Call the function to get the major
+//     getMajor(skills, hobbies, coursesLiked, scenery, jobType, studyEnvironment, careerAspirations, academicStrengths, personalGoals);
+// }
 
 
 
