@@ -22,7 +22,6 @@
 .reglog {
     font-weight: bolder;
     position: relative;
-    top: 30px;
 }
 
 .text a:link {
@@ -128,4 +127,9 @@
     font-size: 20px;
     color: black;
     text-align: center;
+}
+
+.logbtn {
+    width: 200px;
+    border: none;
 }
