@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+
+/* constants */
+:root {
+    --orange-logo--: #FFA500;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.container{
+    width: 360px;
+    height: 400px;
+    background: #fff;
+    margin: 8% auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 0.5s;
+}
+
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+
+::placeholder{
+    color: #777;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+#Form2{
+    left: 450px;
+}
+#Form3{
+    left: 450px;
+}
+
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow:0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, #ff105f, #ffad06) ;  
+    transition: 1s;
+}
+
+#progress::after{
+    content: '';
+    height: 0;
+    content: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #ffad06;
+}
+
+.container-flex .row {
+    display: flex;
+    /* flex-direction: row-reverse; Reverses the order of the columns */
+    justify-content: space-between;
+}
+
+/* .col {
+} */
+
+.text {
+    font-family: "Quando", serif;
+    font-size: 20px;
+    color: #FFA500;
+}
+
+.reglog {
+    font-weight: bolder;
+    position: relative;
+    top: 30px;
+}
+
+.text a:link {
+    color: #FFA500;
+}
+
+.links:link {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.rtext {
+    text-align: right;
+}
+
+.mtext {
+    text-align: center;
+}
+
+.ltext {
+    text-align: left;
+}
+
+.dropbtn {
+    background-color: white;
+    border: 0;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 0;
+}
+
+.dropbtn:hover {
+    border-bottom: #fd7e14 5px solid;
+}
+
+.dropbtn-people {
+    background-color: white;
+    border: 0;
+    border-bottom: #fd7e14 5px solid;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+    background-color: white;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.arrow {
+    width: 30px;
+    margin-left: 0;
+    transition: transform 0.2s ease;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.border {
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bigimg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.paragraph {
+    font-family: "Quando", serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}

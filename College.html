@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyfeLaunch - College</title>
+    <link rel="stylesheet" href="college.css" />
+
+</head>
+<body>
+  
+<body>
+    <div class="container-flex">
+        <div class="row">
+            <div class="col">
+                <img src="images/LyfeLaunch_Logo.png" />
+            </div>
+            <div class="col"></div>
+            <div class="col text rtext">
+                <a class="links reglog" href="#">REGISTER</a>
+                <a>&emsp;</a>
+                <a class="links reglog" href="#">LOGIN</a>
+            </div>
+        </div>
+    </div>
+    <div class="border"></div>
+    <div class="container-flex">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col dropdown">
+                <button class="dropbtn text mtext">Career</button>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="#">Resume/Cover Letter Help</a>
+                    <a href="#">Career Path</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <button class="dropbtn text mtext">College</button>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="#">Find your Major</a>
+                    <a href="#">Resources</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <a href = "Finanaical.html">
+                    <button class="dropbtn text mtext">Finance</button>
+                </a>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="FinancialSub/Budgeting.html">Budgeting</a>
+                    <a href="#">Taxes</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <a href = "MentalHealth.html">
+                    <button class="dropbtn text mtext">Mental Health</button>
+                </a>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="MentalHealthSubs/Professional.html">Professional Help</a>
+                    <a href="#">Discussion</a>
+                    <a href="MentalHealthSubs/MentalResources.html">Resources</a>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <!--------------------------------- Navbar E  --------------------------------->
+    
+    <!--------------------------------- Questionaire S --------------------------------->
+    <div class="container">
+
+        <form id="Form1">
+            <h3>Interests</h3>
+            <input id="skills" type="text" placeholder="Enter skills here (e.g. writing,singing,...)" required>
+            <input id="hobbies" type="text" placeholder="Enter hobbies here (e.g. dancing, jumping, ...)" required>
+            <input id="courses-liked" type="text" placeholder="Enter courses liked (e.g. math, physics, ...)" required>
+
+            <div class="btn-box">
+                <button type="button" id="Next1">Next</button>
+            </div>
+        </form>
+
+        <form id="Form2">
+            <h3>Environment</h3>
+            <input id="scenerary" type="text" placeholder="Indoor/Outdoor">
+            <input id="job-type" type="text" placeholder="Social job/ Solo job">
+            <input id="environment-preference" type="text" placeholder="Study Environment Preference">
+
+            <div class="btn-box">
+                <button type="button" id="Back1">Back</button>
+                <button type="button" id="Next2">Next</button>
+            </div>
+        </form>
+    
+        <form id="Form3">
+            <h3>Personal Info</h3>
+            <input id="career-aspirations" type="text" placeholder="Career Aspirations(e.g. 'fullstack web dev', ...)" required>
+            <input id="academic-strengths" type="text" placeholder="Academic strengths(e.g. coding, calculation,...)" required>
+            <input id="personal-goals" type="text" placeholder="Personal goals" required>
+
+            <div class="btn-box">
+                <button type="button" id="Back2">Back</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <!--------------------------------- Questionaire E --------------------------------->
+
+    
+</body>
+</html>
