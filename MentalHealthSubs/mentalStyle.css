@@ -123,3 +123,82 @@
     display: block; /* Ensures the image is treated as a block element */
     margin: 0 auto; /* Centers the image horizontally */
 }
+.reglog {
+    font-weight: bolder;
+    position: relative;
+}
+.rtext {
+    text-align: right;
+}
+.logbtn {
+    width: 200px;
+    border: none;
+}
+.text a:link {
+    color: #FFA500;
+}
+
+.links:link {
+    color: #FFA500;
+    text-decoration: none;
+}
+
+.links:visited {
+    color: #FFA500;
+    text-decoration: none;
+}
+.dropbtn {
+    background-color: white;
+    border: 0;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 0;
+}
+
+.dropbtn:hover {
+    border-bottom: #fd7e14 5px solid;
+}
+
+.dropbtn-people {
+    background-color: white;
+    border: 0;
+    border-bottom: #fd7e14 5px solid;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dropdown {
+    position: relative;
+    background-color: white;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.arrow {
+    width: 30px;
+    margin-left: 0;
+    transition: transform 0.2s ease;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
