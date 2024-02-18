@@ -15,7 +15,7 @@
 
 .text {
     font-family: "Quando", serif;
-    font-size: 50px;
+    font-size: 20px;
     color: #FFA500;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .title {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .rtext {
@@ -57,7 +57,7 @@
 .dropbtn {
     background-color: white;
     border: 0;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding-right: 0;
 }
@@ -70,7 +70,7 @@
     background-color: white;
     border: 0;
     border-bottom: #fd7e14 5px solid;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
 }
 

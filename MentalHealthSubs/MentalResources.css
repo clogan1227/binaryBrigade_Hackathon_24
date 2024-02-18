@@ -15,40 +15,17 @@
 
 .text {
     font-family: "Quando", serif;
-    font-size: 20px;
-    color: #FFA500;
-}
-
-.reglog {
-    font-weight: bolder;
-    position: relative;
-    top: 30px;
-}
-
-.text a:link {
-    color: #FFA500;
-}
-
-.links:link {
-    color: #FFA500;
-    text-decoration: none;
-}
-
-.links:visited {
+    font-size: 50px;
     color: #FFA500;
     text-decoration: none;
 }
 
 .title {
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .rtext {
     text-align: right;
-}
-
-.mtext {
-    text-align: center;
 }
 
 .ltext {
@@ -58,7 +35,7 @@
 .dropbtn {
     background-color: white;
     border: 0;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     padding-right: 0;
 }
@@ -101,7 +78,7 @@
 }
 
 .arrow {
-    width: 30px;
+    width: 15px;
     margin-left: 0;
     transition: transform 0.2s ease;
 }
@@ -109,41 +86,15 @@
 .dropdown:hover .arrow {
     transform: rotate(180deg);
 }
-
-.border {
-    height: 5px;
-    background-color: black;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.bigimg {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.paragraph {
-    font-family: "Quando", serif;
-    font-size: 20px;
-    color: black;
-    text-align: center;
-}
-.importance{
-    margin-top: 30px;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.importanceTitle{
+.howWould{
     margin-top: 50px;
     text-align: center;
     font-family: "Quando", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
- }
- .financialChoices{
+}
+.mentalChoices{
     margin-top: 30px;
     text-align: center;
     margin-left: 20%;
