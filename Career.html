@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyfeLaunch</title>
+    <link rel="stylesheet" href="Career.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-flex">
+        <div class="row">
+            <div class="col">
+                <img src="images/LyfeLaunch_Logo.png" alt="LyfeLaunch Logo" title="LyfeLaunch Logo" />
+            </div>
+            <div class="col"></div>
+            <button class="col text rtext reglog logbtn" id="btn-login" disabled="true" onclick="login()">Login</button>
+            <button class="col text rtext reglog logbtn" id="btn-logout" disabled="true"
+                onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div class="border"></div>
+    <div class="container-flex">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col dropdown">
+                <button class="dropbtn text mtext">Career</button>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="#">Resume/Cover Letter Help</a>
+                    <a href="#">Career Path</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <button class="dropbtn text mtext">College</button>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="#">Find your Major</a>
+                    <a href="#">Resources</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <a href="Finanaical.html">
+                    <button class="dropbtn text mtext">Finance</button>
+                </a>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="FinancialSub/Budgeting.html">Budgeting</a>
+                    <a href="#">Taxes</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <a href="MentalHealth.html">
+                    <button class="dropbtn text mtext">Mental Health</button>
+                </a>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="MentalHealthSubs/Professional.html">Professional Help</a>
+                    <a href="#">Discussion</a>
+                    <a href="MentalHealthSubs/MentalResources.html">Resources</a>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <p class="importanceTitle">Career Options</p>
+    <p class="importance">Young adults like yourself are blank slates, full of potential. We know that moving from high
+        school to another mode of education, being a 4-year university, may not appeal to all. We've curated a number of
+        options for the many of you who are looking for a career path out of high school. The possibilities are
+        limitless, and so is your future!</p>
+
+    <div class=mentalMethods>
+        <div class=mentalResources>
+
+            <img class="mentalImg" src="images/trades.jpg" alt="arrow Icon">
+            <a href="#">
+                <button class=mentalBtn>
+                    Vocational/Trade School
+                </button>
+            </a>
+        </div>
+        <div class=mentalDiscussion>
+            <img class="mentalImg" src="images/jobs.jpg" alt="arrow Icon">
+            <a href="#">
+                <button class=mentalBtn>
+                    Jobs
+                </button>
+            </a>
+        </div>
+        <div class=mentalProfessional>
+            <img class="mentalImg" src="images/comcol.jpg" alt="arrow Icon">
+            <a href="#">
+                <button class=mentalBtn>
+                    Community College
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <p class="importanceTitle">Resume & Cover Letter Help</p>
+    <p class="importance">Resumes and cover letters play a crucial role in the job search process. Remember, investing
+        time and effort into your resume and cover letter can significantly impact
+        your job search success. Seek help when needed, and present your best self to potential employers!</p>
+
+    <div class="mentalMethods">
+        <div class=rescov>
+            <img class="mentalImg" src="images/resume.png" alt="arrow Icon">
+            <a href="#">
+                <button class=mentalBtn>
+                    Resume Help
+                </button>
+            </a>
+        </div>
+        <div class=rescov>
+            <img class="mentalImg" src="images/cover-removebg-preview.png" alt="arrow Icon">
+            <a href="#">
+                <button class=mentalBtn>
+                    Cover Letter Help
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js">
+    </script>
+    <script src="public/js/app.js"></script>
+</body>
+
+</html>

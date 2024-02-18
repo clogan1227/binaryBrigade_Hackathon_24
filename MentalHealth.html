@@ -14,38 +14,28 @@
     <div class="container-flex">
         <div class="row">
             <div class="col">
-                <img src="images/LyfeLaunch_Logo.png" />
+                <img src="images/LyfeLaunch_Logo.png" alt="LyfeLaunch Logo" title="LyfeLaunch Logo" />
             </div>
             <div class="col"></div>
-            <div class="col text rtext">
-                <a href="#">Register</a>
-                <a>&emsp;</a>
-                <a href="#">Login</a>
-            </div>
+            <button class="col text rtext reglog logbtn" id="btn-login" disabled="true" onclick="login()">Login</button>
+            <button class="col text rtext reglog logbtn" id="btn-logout" disabled="true"
+                onclick="logout()">Logout</button>
         </div>
     </div>
+    <div class="border"></div>
     <div class="container-flex">
         <div class="row">
             <div class="col"></div>
             <div class="col dropdown">
-                <button class="dropbtn">Mental Health</button>
+                <button class="dropbtn text mtext">Career</button>
                 <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
                 <div class="dropdown-content">
-                    <a href="#">Professional Help</a>
-                    <a href="#">Discussion</a>
-                    <a href="#">Resources</a>
+                    <a href="#">Resume/Cover Letter Help</a>
+                    <a href="#">Career Path</a>
                 </div>
             </div>
             <div class="col dropdown">
-                <button class="dropbtn">Finance</button>
-                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
-                <div class="dropdown-content">
-                    <a href="#">Advice</a>
-                    <a href="#">Taxes</a>
-                </div>
-            </div>
-            <div class="col dropdown">
-                <button class="dropbtn">College</button>
+                <button class="dropbtn text mtext">College</button>
                 <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
                 <div class="dropdown-content">
                     <a href="#">Find your Major</a>
@@ -53,53 +43,74 @@
                 </div>
             </div>
             <div class="col dropdown">
-                <button class="dropbtn">Career</button>
+                <a href="Finanaical.html">
+                    <button class="dropbtn text mtext">Finance</button>
+                </a>
                 <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
                 <div class="dropdown-content">
-                    <a href="#">Resume/Cover Letter Help</a>
-                    <a href="#">Career Path</a>
+                    <a href="FinancialSub/Budgeting.html">Budgeting</a>
+                    <a href="#">Taxes</a>
+                </div>
+            </div>
+            <div class="col dropdown">
+                <a href="MentalHealth.html">
+                    <button class="dropbtn text mtext">Mental Health</button>
+                </a>
+                <img class="arrow" src="images/arrowUp.png" alt="arrow Icon">
+                <div class="dropdown-content">
+                    <a href="MentalHealthSubs/Professional.html">Professional Help</a>
+                    <a href="#">Discussion</a>
+                    <a href="MentalHealthSubs/MentalResources.html">Resources</a>
                 </div>
             </div>
             <div class="col"></div>
         </div>
     </div>
-    <p class = importanceTitle>
+    <p class=importanceTitle>
         Importance of Mental Health
     </p>
-    <p class = importance>
-        Mental health is a crucial aspect of overall well-being, impacting how we think, feel, and act in our daily lives. It plays a significant role in our ability to cope with stress, relate to others, and make decisions. Good mental health is essential for maintaining healthy relationships, achieving academic and career success, and coping with life's challenges. Conversely, poor mental health can lead to a range of issues, including depression, anxiety, substance abuse, and even suicidal thoughts. Therefore, it is important to prioritize mental health and seek support when needed. By addressing mental health concerns early and promoting mental wellness, individuals can lead happier, more fulfilling lives.
+    <p class=importance>
+        Mental health is a crucial aspect of overall well-being, impacting how we think, feel, and act in our daily
+        lives. It plays a significant role in our ability to cope with stress, relate to others, and make decisions.
+        Good mental health is essential for maintaining healthy relationships, achieving academic and career success,
+        and coping with life's challenges. Conversely, poor mental health can lead to a range of issues, including
+        depression, anxiety, substance abuse, and even suicidal thoughts. Therefore, it is important to prioritize
+        mental health and seek support when needed. By addressing mental health concerns early and promoting mental
+        wellness, individuals can lead happier, more fulfilling lives.
     </p>
-    <p class = importanceTitle>
+    <p class=importanceTitle>
         What would help you the best?
     </p>
-    <div class = mentalMethods>
-        <div class = mentalResources >
-            
+    <div class=mentalMethods>
+        <div class=mentalResources>
+
             <img class="mentalImg" src="images/MentalResources.png" alt="arrow Icon">
-            <a href = "#">
-                <button class = mentalBtn>
+            <a href="#">
+                <button class=mentalBtn>
                     See some Online Resources
-                </button>   
+                </button>
             </a>
-        </div>      
-        <div class = mentalDiscussion>
+        </div>
+        <div class=mentalDiscussion>
             <img class="mentalImg" src="images/MentalDiscuss.webp" alt="arrow Icon">
-            <a href = "#">
-                <button class = mentalBtn>
+            <a href="#">
+                <button class=mentalBtn>
                     Talk to Others with Similar Issues
                 </button>
             </a>
         </div>
-        <div class = mentalProfessional>
+        <div class=mentalProfessional>
             <img class="mentalImg" src="images/MentalProfessional.avif" alt="arrow Icon">
-            <a href = "#">
-                <button class = mentalBtn>
+            <a href="#">
+                <button class=mentalBtn>
                     Talk to a Professional
                 </button>
             </a>
-           
+
         </div>
     </div>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+    <script src="public/js/app.js"></script>
 </body>
 
 </html>
